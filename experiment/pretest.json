@@ -1,39 +1,84 @@
 {
   "version": 2.0,
   "questions": [
-    {
-      "question": "This is a Sample Question 1?",
+     {
+      "question": "Number of customers arriving in a unit time in the system is represented by?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Mean arrival rate",
+        "b": "Mean service rate",
+        "c": "Simulation speed",
+        "d": "Start"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Mean arrival rate is defined as the number of arrivals per unit time",
+        "b": "Mean service rate is defined as the number of customers served per unit time",
+        "c": "Simulation speed is the extent of speed with which simulation of an experiment is performed",
+        "d": "Start is used to simulate the experiment for the given values of parameters"
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "What does the number of servers in the system represent?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Number of customers arriving for the service",
+        "b": "Total number of service providers in the system",
+        "c": "Number of service providers providing service at any instant in the system ",
+        "d": "Number of service providers which are idle at any instant in the system"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Mean arrival rate is defined as the number of arrivals per unit time",
+        "b": "Mean service rate is defined as the number of customers served per unit time",
+        "c": "Number of service providers providing service at any instant in the system ",
+        "d": "Start is used to simulate the experiment for the given values of parameters"
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
+    },
+    {
+      "question": "What is the relationship between the mean arrival rate and mean service rate for the existence of a steady-state solution?",
+      "answers": {
+        "a": "Mean arrival rate = Mean service rate",
+        "b": "Mean arrival rate = Number of servers times the mean service rate",
+        "c": "Mean arrival rate < Number of servers times the mean service rate",
+        "d": "Mean arrival rate < Mean service rate"
+      },
+      "explanations": {
+        "a": "For mean arrival rate equals to mean service rate, traffic intensity equals to 1, which leads an infinite number of customers in the system",
+        "b": "In this case, the system will collapse due to more arrival in comparison to service in a unit time",
+        "c": "This leads to steady-state solution as arrivals are less than service in a unit time",
+        "d": "In this case, the system will collapse due to more arrivals in comparison to service in a unit time when the arrival rate becomes greater than the service rate"
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Little's law defines the relationship between which of the following measures?",
+      "answers": {
+        "a": "Mean arrival rate and mean service rate",
+        "b": "Mean arrival rate and traffic intensity",
+        "c": "Mean sevice rate and traffic intensity",
+        "d": "Average number of customers in the system and waiting time in the system"
+      },
+      "explanations": {
+        "d": "According to Little's law average number of customers in the system is the mean arrival rate time waiting time of a customer in the system"
+      },
+      "correctAnswer": "d",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "In a Tea shop run by one servant, the queueing model will be best suited is?",
+      "answers": {
+        "a": "Single server model",
+        "b": "Multi-server model",
+        "c": "Single server with general arrival process model",
+        "d": "Multi-server with Markovian arrival model"
+      },
+      "explanations": {
+        "c": "Since the customers are served by one person and the service time follows a general distribution"
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
     }
   ]
 }

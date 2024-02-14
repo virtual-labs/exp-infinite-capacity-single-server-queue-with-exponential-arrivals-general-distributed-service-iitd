@@ -2,38 +2,52 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+      "question": "Calculate the average waiting time (in minutes) in an M/G/1 queue if the arrival rate is 8 customers per hour and the service rate is 10 customers per hour, and the mean service time is 6 minutes.",
+      "options": {
+        "a": "0.5",
+        "b": "0.8",
+        "c": "1.2",
+        "d": "1.5"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      "correctAnswer": "c",
+      "explanation": "To calculate the average waiting time in an M/G/1 queue, we use Little's Law, which states that the average waiting time (W) is equal to the average number of customers in the system (L) divided by the arrival rate (λ). First, we calculate the utilization factor ('ρ') using the formula ρ = λ / μ, where λ is the arrival rate and μ is the service rate. In this case, ρ = 8 / 10 = 0.8. Then, we use the M/G/1 queueing formula for the average waiting time: W = (1 / μ) * (ρ / (1 - ρ)). Substituting the values, we get W = (1 / 10) * (0.8 / (1 - 0.8)) = 1.2 minutes.",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Determine the utilization factor ('ρ') for an M/G/1 queue if the arrival rate is 6 customers per hour and the service rate is 8 customers per hour.",
+      "options": {
+        "a": "0.5",
+        "b": "0.625",
+        "c": "0.75",
+        "d": "0.875"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "c",
+      "explanation": "The utilization factor ('ρ') in an M/G/1 queue is the ratio of the arrival rate (λ) to the service rate (μ). In this case, ρ = λ / μ = 6 / 8 = 0.75.",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+      "question": "Find the probability that an arriving customer has to wait in an M/G/1 queue if the average arrival rate is 4 customers per hour and the average service rate is 6 customers per hour.",
+      "options": {
+        "a": "0.25",
+        "b": "0.333",
+        "c": "0.5",
+        "d": "0.667"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      "correctAnswer": "b",
+      "explanation": "The probability that an arriving customer has to wait in an M/G/1 queue can be calculated using Little's Law. The average waiting time (W) is equal to the average number of customers in the system (L) divided by the arrival rate (λ). In this case, ρ = λ / μ = 4 / 6 = 0.666. Then, we use the formula for the probability of waiting, which is ρ / (1 - ρ). Substituting the values, we get the probability of waiting as 0.666 / (1 - 0.666) = 0.333.",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Calculate the average number of customers in the system for an M/G/1 queue if the arrival rate is 5 customers per hour and the service rate is 7 customers per hour.",
+      "options": {
+        "a": "5",
+        "b": "2",
+        "c": "3",
+        "d": "4"
       },
       "correctAnswer": "c",
-      "difficulty": "beginner"
+      "explanation": "The average number of customers in the system for an M/G/1 queue can be calculated using Little's Law. The average number of customers in the system (L) is equal to the arrival rate (λ) multiplied by the average waiting time (W). First, we calculate the utilization factor ('ρ') using the formula ρ = λ / μ = 5 / 7 = 0.714. Then, using Little's Law, L = λ * W, where W = (1 / μ) * (ρ / (1 - ρ)). Substituting the values, we get W = (1 / 7) * (0.714 / (1 - 0.714)) = 0.238. Therefore, L = 5 * 0.238 = 1.19.",
+      "difficulty": "intermediate"
     }
   ]
 }
